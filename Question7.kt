@@ -53,8 +53,8 @@ fun main(args: Array<String>) {
                         Team("Netchanok Thaintin","65.5","SM")
                     )
     for(value in stu) {
-        if(value.position == "TL"){
-            value.show_info()
+        when (value.position){
+            "QM" -> value.show_info()
         }
     }
 }
