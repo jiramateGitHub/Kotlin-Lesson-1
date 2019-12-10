@@ -5,9 +5,9 @@ class Team {
         this.name = ""
         this.grade = 0.0
     }
-    constructor(name:String,grade:Double){
+    constructor(name:String,grade:String){
         this.name = name
-        this.grade = grade
+        this.grade = grade.toDouble()
     }
     public fun show_info(){
         var str_grade:String
@@ -34,15 +34,15 @@ class Team {
 
 fun main(args: Array<String>) {
     var stu = arrayOf(
-                        Team("Jiramate Phuaphan",0.5),
-                        Team("Thananya Banchuenwijit",80.5),
-                        Team("Kessarin U-tumporn",80.5),
-                        Team("Sathien Supabkul",80.5),
-                        Team("Nuttorn Porkpibul",80.5),
-                        Team("Peeranat Buranarek",80.5),
-                        Team("Thanpisit Suetrong",80.5),
-                        Team("Wipawee Inkham",80.5),
-                        Team("Netchanok Thaintin",80.5)
+                        Team("Jiramate Phuaphan","0.5"),
+                        Team("Thananya Banchuenwijit","92"),
+                        Team("Kessarin U-tumporn","80.5"),
+                        Team("Sathien Supabkul","62"),
+                        Team("Nuttorn Porkpibul","70"),
+                        Team("Peeranat Buranarek","80.5"),
+                        Team("Thanpisit Suetrong","80"),
+                        Team("Wipawee Inkham","80.5"),
+                        Team("Netchanok Thaintin","65.5")
                     )
     for(value in stu) {
         value.show_info()
