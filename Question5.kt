@@ -34,13 +34,15 @@ class Team {
 
 fun main(args: Array<String>) {
     var stu = arrayOf(
-                        Team("A",0.5),
-                        Team("B",80.5),
-                        Team("B",80.5),
-                        Team("B",80.5),
-                        Team("B",80.5),
-                        Team("B",80.5),
-                        Team("B",80.5)
+                        Team("Jiramate Phuaphan",0.5),
+                        Team("Thananya Banchuenwijit",80.5),
+                        Team("Kessarin U-tumporn",80.5),
+                        Team("Sathien Supabkul",80.5),
+                        Team("Nuttorn Porkpibul",80.5),
+                        Team("Peeranat Buranarek",80.5),
+                        Team("Thanpisit Suetrong",80.5),
+                        Team("Wipawee Inkham",80.5),
+                        Team("Netchanok Thaintin",80.5)
                     )
     for(value in stu) {
         value.show_info()
