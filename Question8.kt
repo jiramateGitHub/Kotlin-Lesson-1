@@ -34,8 +34,9 @@ class Team {
         }
         println("Name ${name} | Grade ${str_grade}")
     }
-    public fun show_info(){
-        println("Name ${name} | Position ${position} ")
+    public fun show_info(): String{
+        var info = "Name ${name} | Position ${position}"
+        return info
     }
 }
 
@@ -52,7 +53,9 @@ fun main(args: Array<String>) {
                         Team("Wipawee Inkham","80.5","SM"),
                         Team("Netchanok Thaintin","65.5","SM")
                     )
-    for(value in stu) {
-      value.show_info()
+    for((index, value) in stu.withIndex()) {
+        var temp = value.show_info()
+        println("${index+1}  ${temp}")
+        
     }
 }
